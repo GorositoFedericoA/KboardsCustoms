@@ -243,10 +243,8 @@ body{
 .main_contact{
     display: block;
     margin: auto auto;
-    height: 350px;
+    height: auto;
     width: 350px;
-    background-color: #5e473cdb;
-    border-radius: 15px;
 }
 
 #form_contact{
@@ -256,6 +254,19 @@ body{
     font-family:'Oswald', sans-serif;
     font-size: 10px;
     font-weight: 500;
+    background-color: #5e473cdb;
+    border-radius: 15px;
+}
+
+.div_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 05px;
+}
+
+#checkbox{
+    margin: 5px 10px ;
 }
 
 /*guia*/
@@ -263,6 +274,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 10px;
+    align-items: center;
 }
 
 .article_steps{
@@ -309,6 +321,20 @@ body{
 .steps_iframe{
     width:250px;
 }
+
+/* animaciones */
+.box_anim{
+    transition: box-shadow 0.5s ease;
+}
+
+.box_anim:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.541);
+}
+
+.imgs:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.541);
+}
+
 /* diseno para descktop */
 @media screen and (min-width: 1200px){
     /* header*/
@@ -372,12 +398,15 @@ body{
         margin: auto auto;
         background-color: #5e473cdb;
         margin: 05px auto; 
+        border-radius: 10px;
     }
 
     .imgs{
+        transition: box-shadow 0.5s ease;
         height: 350px;
         width: 350px;
-        margin: 03px;
+        margin: 08px;
+        border-radius: 05px;
     }
 
     /*nosotros*/
@@ -435,6 +464,16 @@ body{
     .steps_iframe{
         width: 500px;
         height: 350px;
+    }
+
+    /*contacto*/
+    .main_contact{
+        height: auto;
+        width: 500px;
+    }
+
+    #form_contact{
+        font-size: 20px;
     }
 
     /*footer*/

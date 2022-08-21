@@ -38,7 +38,7 @@
         </nav>
     </header>
     <main class="main_contact grid_main" id="contact" >
-            <form id="form_contact">
+            <form class="box_anim" id="form_contact" action="./contacto.html" method="get" >
                 <label for="nombre">Nombre</label>
                 <input id="nombre" type="text" placeholder="Ingresa tu nombre">
                 <label for="apellido">Apellido</label>
@@ -48,7 +48,12 @@
                 <label for="cel">Celular</label>
                 <input type="tel" placeholder="Ingrese su nro. de celular">
                 <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario"></textarea> 
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario"></textarea>
+            <div class="div_flex">
+                <input id="checkbox" type="checkbox">
+                <label for="checkbox">Acepto recibir mas información</label>
+            </div>
+                <input type="submit"> 
             </form>
     </main>
     <footer class="footer grid_footer">
