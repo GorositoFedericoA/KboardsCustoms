@@ -328,11 +328,11 @@ body{
 }
 
 .box_anim:hover{
-    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.541);
+    box-shadow: 1rem 1rem 1rem  rgba(0, 0, 0, 0.541);
 }
 
 .imgs:hover{
-    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.541);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.541);
 }
 
 /* diseno para descktop */
