@@ -1,11 +1,13 @@
 /* mobile first */ 
 
 /* header*/
-.header1{
-    /* display: flex;  
-    flex-direction: column; */
-    padding: 10px;
-    background-color:#5e473cdb;
+
+.btt_nav{
+    background-color: #5fd4d6;
+}
+
+.nav_ls{
+    background-color:#5e473cdb ;
 }
 
 .title{
@@ -26,27 +28,15 @@
 }
 
 .header_nav{
-    padding: 0px;
-    margin: 0;
+    height: 130px;
     background-color:#5e473cdb;
 }
-
-/* .header_nav ul{
-    display: flex;
-    flex-direction: row;
-} */
-/* 
-.header_nav ul li{
-    border-radius: 05px;
-    padding: 10px;
-} */
 
 .header_nav ul li a{
     margin: 0;
     padding: 0;
     color: #ffffff;
     font-family:'Oswald', sans-serif;
-    /* font-size: 10px; */
     font-weight: 500;
     text-decoration: none;
 }
@@ -58,7 +48,7 @@ body{
 
 .grid_body{
     display: grid;
-    grid-template-rows: 150px auto 100px;
+    grid-template-rows: 130px auto 100px;
     grid-template-columns: auto ;
     grid-template-areas: 
     "header"
@@ -80,14 +70,14 @@ body{
 
 /* backrounds*/
 #backround_index{
-    background-image: url(../imagenes/background-2.jpg);
+    background-image: url(../imagenes/background-1.jpg);
     background-size:cover;
     background-position: center center;
     position: sticky;
 }
 
 #backround_us{
-    background-image: url(../imagenes/background-4.jpg);
+    background-image: url(../imagenes/background-1.jpg);
     background-size:cover;
     background-position: center center;
     position: sticky;
@@ -101,14 +91,14 @@ body{
 }
 
 #backround_guide{
-    background-image: url(../imagenes/background-3.png);
+    background-image: url(../imagenes/background-1.jpg);
     background-size:cover;
     background-position: center center;
     position: sticky;
 }
 
 #backround_contact{
-    background-image: url(../imagenes/background-5.jpg);
+    background-image: url(../imagenes/background-1.jpg);
     background-size:cover;
     background-position: center center;
     position: sticky;
@@ -251,6 +241,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin: 10px;   
     font-family:'Oswald', sans-serif;
     font-size: 10px;
     font-weight: 500;
@@ -338,22 +329,15 @@ body{
 /* diseno para desktop */
 @media screen and (min-width: 1200px){
     /* header*/
-    .header{
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row; */
+
+    .header_nav{
+        height: 130px;
         background-color:#5e473cdb;
     }
 
     .title{
         font-size: 65px;
     }
-
-    /* .header_nav ul{
-        display: flex;
-        flex-direction: row;
-    } */
 
     .header_nav ul li a{
         font-size: 20px;
@@ -473,6 +457,7 @@ body{
     }
 
     #form_contact{
+        margin: 10px;
         font-size: 20px;
     }
 
