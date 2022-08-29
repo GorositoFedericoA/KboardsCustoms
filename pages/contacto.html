@@ -1,81 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBoardCustoms</title>
-    <link id="icon" rel="shortcut icon" href="./imagenes/switch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- LINK DE CSS -->
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/reset.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBoardCustoms</title>
+  <link id="icon" rel="shortcut icon" href="../imagenes/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- LINK DE CSS -->
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/reset.css">
 </head>
-<body class="body grid_body" id="backround_contact">
-    <header class="header1 grid_header">
-        <nav class="navbar navbar-expand-lg header_nav ">
-            <div class="container-fluid " >
-                <h1 class="title navbar-brand col-8 row"> <a href="../index.html" target="_self" class="titulo_inicio" >KBoard<span>Customs</span></a></h1>
-              <button class="navbar-toggler btt_nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse col-4 row nav_ls" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-0 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html" target="_self">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="imagenes.html" target="_self">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html" target="_self">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="guia.html" target="_self">Tutorial</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html" target="_self">Contactanos!</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="main_contact grid_main" id="contact" >
-            <form class="box_anim" id="form_contact" action="./contacto.html" method="get" >
-                <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" placeholder="Ingresa tu nombre">
-                <label for="apellido">Apellido</label>
-                <input id="apellido" type="text" placeholder="Ingresa tu apellido">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="ejemplo@gmail.com">
-                <label for="cel">Celular</label>
-                <input type="tel" placeholder="Ingrese su nro. de celular">
-                <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario"></textarea>
-            <div class="div_flex">
-                <input id="checkbox" type="checkbox">
-                <label for="checkbox">Acepto recibir mas información</label>
-            </div>
-                <input type="submit"> 
-            </form>
-    </main>
-    <footer class="footer grid_footer">
-        <div>
-            <ul>
-                <li>
-                <a href="https://www.google.com/search?q=buenos+aires%2C+argentina&rlz=1C1ALOY_esAR1012AR1012&sxsrf=ALiCzsaP5r2q3DiN4pGDxSFQ7dXPpPeFjQ%3A1659040094076&ei=XvHiYoyiBLyj1sQPoZymyAw&ved=0ahUKEwiMyeb7tZz5AhW8kZUCHSGOCckQ4dUDCA4&uact=5&oq=buenos+aires%2C+argentina&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEMsBMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhUILhDHARDRAxDUAhDIAxCwAxBDGAI6EgguEMcBENEDEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOg4ILhCxAxCDARDHARCvAToHCC4Q1AIQQzoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6BAgAEEM6CgguELEDENQCEEM6CwguEIAEEMcBEK8BOgUILhCABDoGCAAQHhAWSgQIQRgASgQIRhgBUNQUWIQ9YN0_aANwAXgAgAF4iAGeCZIBBDEwLjOYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz" target="_blank">Buenos Aires, Argentina.</a></li>
-                <li>
-                <a href="https://www.instagram.com/explore/tags/customkeyboard/?hl=es" target="_blank">#Customkeyboard</a></li>
-                <li><span>Creado por:Federico Gorosito</span></li>
-            </ul>
+
+<body class="container-fluid div_body">
+  <header class="row header1">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand title_header" href="../index.html"><img src="../imagenes/icon.png" width="50px" alt="">
+          KBoard<span class="title_customs">Customs</span></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end flex-grow-1 nav_list">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagenes.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contactanos</a>
+            </li>
         </div>
-    </footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+      </div>
+    </nav>
+  </header>
+  <main class="row justify-content-center main1">
+    <div class="mb-2">
+    <form class="box_anim form_contact p-3" action="./contacto.html" method="get">
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu Apellido">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Celular</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nro. de celular">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Acepto suscribirme y recibir ofertas
+        </label>
+      </div>
+    </form>
+  </div>
+    <!-- <div class="col-12">
+      
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ingresa tu nombre">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text" placeholder="Ingresa tu apellido">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="ejemplo@gmail.com">
+        <label for="cel">Celular</label>
+        <input type="tel" placeholder="Ingrese su nro. de celular">
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+          placeholder="Ingrese su comentario"></textarea>
+        <div class="div_flex">
+          <input id="checkbox" type="checkbox">
+          <label for="checkbox">Acepto recibir mas información</label>
+        </div>
+        <input type="submit">
+      
+    </div> -->
+  </main>
+  <footer class="row align-items-end footer1">
+    <div class="col-12">
+      <ul>
+        <li>
+          <a href="https://www.google.com/search?q=buenos+aires%2C+argentina&rlz=1C1ALOY_esAR1012AR1012&sxsrf=ALiCzsaP5r2q3DiN4pGDxSFQ7dXPpPeFjQ%3A1659040094076&ei=XvHiYoyiBLyj1sQPoZymyAw&ved=0ahUKEwiMyeb7tZz5AhW8kZUCHSGOCckQ4dUDCA4&uact=5&oq=buenos+aires%2C+argentina&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEMsBMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhUILhDHARDRAxDUAhDIAxCwAxBDGAI6EgguEMcBENEDEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOg4ILhCxAxCDARDHARCvAToHCC4Q1AIQQzoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6BAgAEEM6CgguELEDENQCEEM6CwguEIAEEMcBEK8BOgUILhCABDoGCAAQHhAWSgQIQRgASgQIRhgBUNQUWIQ9YN0_aANwAXgAgAF4iAGeCZIBBDEwLjOYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz"
+            target="_blank">Buenos Aires, Argentina.</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/explore/tags/customkeyboard/?hl=es" target="_blank">#Customkeyboard</a>
+        </li>
+        <li><span>Creado por:Federico Gorosito</span></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
