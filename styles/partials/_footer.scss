@@ -1,0 +1,37 @@
+/* FOOTER */
+
+.div_footer ul {
+    list-style-type: none;
+}
+
+.div_footer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.div_footer ul li a:hover {
+    color: rgb(240, 152, 25);
+}
+
+.div_footer ul li span {
+    background:
+        linear-gradient(to right,
+            rgb(255, 145, 0),
+            rgb(255, 145, 0)),
+        linear-gradient(to right,
+            rgb(240, 234, 0),
+            rgb(240, 152, 25),
+            rgb(255, 81, 47));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.div_footer ul li span:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.icon_footer {
+    width: 25px;
+}

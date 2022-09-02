@@ -1,147 +1,138 @@
 /* BODY */
 body {
-    font-family: 'Arimo', sans-serif;
-    background: #FF512F;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, rgb(240, 152, 25), rgb(255, 81, 47));
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, rgb(240, 152, 25), rgb(255, 81, 47));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Arimo", sans-serif;
+  background: #FF512F;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgb(240, 152, 25), rgb(255, 81, 47));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* HEADER */
-
 .header_title {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .icon {
-    width: 50px;
+  width: 50px;
 }
 
 .navbar-brand:hover {
-    color: rgb(240, 152, 25);
+  color: rgb(240, 152, 25);
 }
 
 .nav-item a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .nav-item a:hover {
-    color: rgb(240, 152, 25);
+  color: rgb(240, 152, 25);
+}
+
+/* FOOTER */
+.div_footer ul {
+  list-style-type: none;
+}
+
+.div_footer ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.div_footer ul li a:hover {
+  color: rgb(240, 152, 25);
+}
+
+.div_footer ul li span {
+  background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0)), linear-gradient(to right, rgb(240, 234, 0), rgb(240, 152, 25), rgb(255, 81, 47));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.div_footer ul li span:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.icon_footer {
+  width: 25px;
 }
 
 /* INDEX */
 .container {
-    transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .container:hover {
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
 }
 
 .card {
-    transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
 }
 
 .btn_index {
-    margin: 10px;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 10px;
-    display: block;
-    border: 0px;
-    font-weight: 700;
-    box-shadow: 0px 0px 14px -7px rgb(240, 152, 25);
-    background-image: linear-gradient(45deg, rgb(255, 81, 47) 0%, rgb(240, 152, 25) 51%, rgb(255, 81, 47) 100%);
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px rgb(240, 152, 25);
+  background-image: linear-gradient(45deg, rgb(255, 81, 47) 0%, rgb(240, 152, 25) 51%, rgb(255, 81, 47) 100%);
+  cursor: pointer;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .btn_index:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .btn_index:active {
-    transform: scale(0.95);
-}
-
-/* FOOTER */
-
-.div_footer ul {
-    list-style-type: none;
-}
-
-.div_footer ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.div_footer ul li a:hover {
-    color: rgb(240, 152, 25);
-}
-
-.div_footer ul li span {
-    background:
-        linear-gradient(to right,
-            rgb(255, 145, 0),
-            rgb(255, 145, 0)),
-        linear-gradient(to right,
-            rgb(240, 234, 0),
-            rgb(240, 152, 25),
-            rgb(255, 81, 47));
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-.div_footer ul li span:hover {
-    background-size: 0 3px, 100% 3px;
-}
-
-.icon_footer {
-    width: 25px;
+  transform: scale(0.95);
 }
 
 /* COMPONENTES */
-
 .div_comp {
-    border-bottom: solid 03px rgba(69, 67, 70, 0.437);
+  border-bottom: solid 3px rgba(69, 67, 70, 0.437);
 }
 
 /* GUIA */
 .div_guide {
-    border-bottom: solid 03px rgba(69, 67, 70, 0.437);
+  border-bottom: solid 3px rgba(69, 67, 70, 0.437);
 }
 
 /* CONTACTO */
-.div_contact{
-    background-color: rgba(202, 196, 204, 0.69);
-    border: solid 04px rgba(69, 67, 70, 0.437);
-    border-radius: 10px;
+.div_contact {
+  background-color: rgba(202, 196, 204, 0.69);
+  border: solid 4px rgba(69, 67, 70, 0.437);
+  border-radius: 10px;
 }
 
-.btn_send{
-    background-color: rgb(240, 234, 0);
+.btn_send {
+  background-color: rgb(240, 234, 0);
 }
 
-.btn_reboot{
-    background-color: rgb(255, 81, 47);
+.btn_reboot {
+  background-color: rgb(255, 81, 47);
 }
 
-#exampleFormControlTextarea1{
-    resize: none;
-}
+#exampleFormControlTextarea1 {
+  resize: none;
+}/*# sourceMappingURL=styles.css.map */
