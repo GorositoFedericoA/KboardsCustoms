@@ -4,7 +4,7 @@
         font-size: 28px;
 
         &:hover {
-            color: rgb(240, 152, 25);
+            color: map-get($links, linksHover);
         }
 
         .icon {
@@ -13,10 +13,10 @@
     }
 
     .nav-item a {
-        color: rgb(255, 255, 255);
-
+        color: map-get($links, linksColour);
+        
         &:hover {
-            color: rgb(240, 152, 25);
+            color: map-get($links, linksHover);
         }
     }
 }

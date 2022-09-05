@@ -7,10 +7,10 @@
                 width: 25px;
             }
             a{
-                color: rgb(255, 255, 255);
+                color: map-get($links, linksColour);
                 text-decoration: none;
                 &:hover {
-                    color: rgb(240, 152, 25);
+                    color: map-get($links, linksHover);
                 }
             }
             span{
