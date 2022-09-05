@@ -1,8 +1,8 @@
 /* CONTACTO */
 .div_contact {
     background-color: rgba(202, 196, 204, 0.69);
-    border: solid 04px rgba(69, 67, 70, 0.437);
-    border-radius: 10px;
+    border: map-get($borders, borderContact);
+    border-radius: map-get($borders, borderRadiusContact);
 
     #exampleFormControlTextarea1 {
         resize: none;
