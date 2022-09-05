@@ -1,21 +1,22 @@
 /* HEADER */
+.navbar {
+    .navbar-brand {
+        font-size: 28px;
 
-.header_title {
-    font-size: 28px;
-}
+        &:hover {
+            color: rgb(240, 152, 25);
+        }
 
-.icon {
-    width: 50px;
-}
+        .icon {
+            width: 50px;
+        }
+    }
 
-.navbar-brand:hover {
-    color: rgb(240, 152, 25);
-}
+    .nav-item a {
+        color: rgb(255, 255, 255);
 
-.nav-item a {
-    color: rgb(255, 255, 255);
-}
-
-.nav-item a:hover {
-    color: rgb(240, 152, 25);
+        &:hover {
+            color: rgb(240, 152, 25);
+        }
+    }
 }

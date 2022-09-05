@@ -9,23 +9,19 @@ body {
 }
 
 /* HEADER */
-.header_title {
+.navbar .navbar-brand {
   font-size: 28px;
 }
-
-.icon {
-  width: 50px;
-}
-
-.navbar-brand:hover {
+.navbar .navbar-brand:hover {
   color: rgb(240, 152, 25);
 }
-
-.nav-item a {
+.navbar .navbar-brand .icon {
+  width: 50px;
+}
+.navbar .nav-item a {
   color: rgb(255, 255, 255);
 }
-
-.nav-item a:hover {
+.navbar .nav-item a:hover {
   color: rgb(240, 152, 25);
 }
 
@@ -33,16 +29,16 @@ body {
 .div_footer ul {
   list-style-type: none;
 }
-
+.div_footer ul li .icon_footer {
+  width: 25px;
+}
 .div_footer ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
 .div_footer ul li a:hover {
   color: rgb(240, 152, 25);
 }
-
 .div_footer ul li span {
   background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0)), linear-gradient(to right, rgb(240, 234, 0), rgb(240, 152, 25), rgb(255, 81, 47));
   background-size: 100% 3px, 0 3px;
@@ -50,33 +46,24 @@ body {
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
-
 .div_footer ul li span:hover {
   background-size: 0 3px, 100% 3px;
-}
-
-.icon_footer {
-  width: 25px;
 }
 
 /* INDEX */
 .container {
   transition: box-shadow 0.3s ease;
 }
-
 .container:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
 }
-
-.card {
+.container .card {
   transition: box-shadow 0.3s ease;
 }
-
-.card:hover {
+.container .card:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(69, 67, 70, 0.69);
 }
-
-.btn_index {
+.container .card .btn_index {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -97,14 +84,12 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
-.btn_index:hover {
+.container .card .btn_index:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
 }
-
-.btn_index:active {
+.container .card .btn_index:active {
   transform: scale(0.95);
 }
 
@@ -124,15 +109,12 @@ body {
   border: solid 4px rgba(69, 67, 70, 0.437);
   border-radius: 10px;
 }
-
-.btn_send {
+.div_contact #exampleFormControlTextarea1 {
+  resize: none;
+}
+.div_contact .btn_send {
   background-color: rgb(240, 234, 0);
 }
-
-.btn_reboot {
+.div_contact .btn_reboot {
   background-color: rgb(255, 81, 47);
-}
-
-#exampleFormControlTextarea1 {
-  resize: none;
 }/*# sourceMappingURL=styles.css.map */
