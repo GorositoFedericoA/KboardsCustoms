@@ -9,10 +9,10 @@
     }
 
     .btn_send {
-        background-color: rgb(240, 234, 0);
+        @include buttons(rgb(240, 234, 0))
     }
 
     .btn_reboot {
-        background-color: rgb(255, 81, 47);
+        @include buttons(rgb(240, 0, 112))
     }
 }
