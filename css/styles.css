@@ -116,9 +116,9 @@ body {
 .div_contact #exampleFormControlTextarea1 {
   resize: none;
 }
+.div_contact .btn_reboot {
+  background-color: rgb(255, 81, 47);
+}
 .div_contact .btn_send {
   background-color: rgb(240, 234, 0);
-}
-.div_contact .btn_reboot {
-  background-color: rgb(0, 4, 240);
 }/*# sourceMappingURL=styles.css.map */

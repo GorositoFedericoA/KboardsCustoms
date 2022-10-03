@@ -8,11 +8,11 @@
         resize: none;
     }
 
-    .btn_send {
-        @include buttons(rgb(240, 234, 0))
+    .btn_reboot {
+        @include buttons(rgb(255, 81, 47))
     }
 
-    .btn_reboot {
-        @include buttons(rgb(0, 4, 240))
+    .btn_send {
+        @include buttons(rgb(240, 234, 0))
     }
 }

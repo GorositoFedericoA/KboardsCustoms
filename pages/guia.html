@@ -1,141 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Como armar un teclado mecanico custom">
-    <meta name="keywords" content="Teclado mecanico custom, teclado mecanico, blod de teclado, keyboard, keycaps, switchs, plate, pcb">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Como armar un teclado mecanico custom" />
+    <meta
+      name="keywords"
+      content="Teclado mecanico custom, teclado mecanico, blod de teclado, keyboard, keycaps, switchs, plate, pcb"
+    />
     <!-- Titulo -->
     <title>Guia | Blog de teclados mecanicos customs</title>
     <!-- Icono -->
-    <link id="icon" rel="shortcut icon" href="https://drive.google.com/uc?export=download&id=1misll95Rgg4B0O_m0JB_GnCcOTXOYTyx">
+    <link
+      id="icon"
+      rel="shortcut icon"
+      href="https://drive.google.com/uc?export=download&id=1misll95Rgg4B0O_m0JB_GnCcOTXOYTyx"
+    />
     <!-- Fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <!-- LINK DE CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand col-6 header_title" href="../index.html">
+            <img
+              class="icon col-2"
+              src="https://drive.google.com/uc?export=download&id=1misll95Rgg4B0O_m0JB_GnCcOTXOYTyx"
+              alt="icono de un switch"
+            />
+            KBoardCustoms</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon col-6"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="componentes.html">Componentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guia.html">Guia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand col-6 header_title" href="../index.html"> <img class="icon col-2" src="https://drive.google.com/uc?export=download&id=1misll95Rgg4B0O_m0JB_GnCcOTXOYTyx" alt="icono de un switch">
-          KBoardCustoms</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon col-6"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="componentes.html">Componentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="guia.html">Guia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+    <main>
+      <div class="container bg-light my-2">
+        <div class="row">
+          <div class="col-12 my-2 p-4">
+            <h1 class="body_title">Aprende a armar tu propio teclado!</h1>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="container bg-light my-2">
-      <div class="row">
-        <div class="col-12 my-2 p-4">
-          <h1 class="body_title">Aprende a armar tu propio teclado!</h1>
+        <div class="row p-3 div_guide">
+          <div class="col-12">
+            <h2 class="title_steps">Paso 1-PCB</h2>
+            <p class="steps">
+              Lo primero que vamos a hacer es inspeccionarla entera para ver
+              cómo vamos a llevar a cabo los siguientes pasos. Cercioramos de la
+              posición LED y comprobamos que no tenga daños. Para prepararla,
+              vamos a pasar un hisopo con alcohol isopropílico para eliminar
+              todas las marcas o residuos. No utilicen alcohol para curar porque
+              puede provocar un cortocircuito. Si van a utilizar iluminación
+              LED, este es el momento en el que tienen que soldar los pines en
+              el PCB.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 1</h2>
-            <p class="steps">explico pasos del video</p>
+        <div class="row p-3 div_guide">
+          <div class="col-12">
+            <h2 class="title_steps">Paso 2-Placa</h2>
+            <p class="steps">
+              Hay que instalar la placa antes que los switches, a no ser que no
+              usemos placa. De esta forma, será más cómodo instalarlos.
+              Normalmente, habrá una ligera cobertura entre la placa y el PCB.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 1</h2>
-            <p class="steps">explico pasos del video</p>
+        <div class="row p-3 div_guide">
+          <div class="col-12">
+            <h2 class="title_steps">Paso 3-Switches</h2>
+            <p class="steps">
+              Recomendamos instalar un switch en cada esquina para facilitar la
+              instalación de todos. De esta manera, reducimos la flexión del
+              teclado, lo que complica la instalación. Hay que presionar los
+              switches en la placa hasta que los pines pasen al otro lado de la
+              PCB. Si no pasan por completo, tendremos problemas de
+              conductividad eléctrica. Procuren que los pines no se doblen,
+              intentando que éstos estén lo más rectos posibles a la hora de
+              encajar en la PCB. Hay que colocar los switches con precaución ya
+              que si hacemos mucha presión podemos romper la placa.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 2</h2>
-            <p class="steps">explico pasos del video</p>
+        <div class="row p-3 div_guide">
+          <div class="col-12">
+            <h2 class="title_steps">Paso 4-LEDs</h2>
+            <p class="steps">
+              Los LED que se iluminan de un color, tienen dos pines: uno
+              positivo (el más largo) y otro negativo (el más corto). En la
+              mayoría de las PCBs está marcado el positivo y el negativo con
+              símbolos, por lo que tienen que prestar atención al detalle.
+              Cuidado con las teclas ALT, espacio o CTRL porque están
+              invertidas. Este consejo es crucial a la hora de soldar, así no
+              cometeremos fallos. Después de soldar los pines, tienen que
+              doblarlos. No dejen pines con soldaduras endebles. Ya sólo queda
+              limpiar todas las soldaduras para evitar que se deterioren o la
+              PCB falle por entrar en contacto con otros elementos. ¡Ya
+              tendremos nuestro teclado personalizado fabricado y listo para
+              funcionar!
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 3</h2>
-            <p class="steps">explico pasos del video</p>
-        </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 4</h2>
-            <p class="steps">explico pasos del video</p>
-        </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_steps">Paso 5</h2>
-            <p class="steps">explico pasos del video</p>
-        </div>
-      </div>
-      <div class="row p-3 div_guide">
-        <div class="col-12">
-            <h2 class="title_iframe">Les dejamos un pequeño tutorial con los pasos explicados</h2>
-            <iframe class="steps_iframe" src="https://www.youtube.com/embed/PsFnxyEfZi8" title="YouTube video player"
+        <div class="row p-3 div_guide">
+          <div class="col-12">
+            <h2 class="title_iframe">
+              Les dejamos un pequeño tutorial con los pasos explicados
+            </h2>
+            <iframe
+              class="steps_iframe"
+              src="https://www.youtube.com/embed/PsFnxyEfZi8"
+              title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="container-fluid text-center">
-      <div class="row p-4 bg-dark">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-light div_footer">
-          <ul>
-            <li>
-              <a href="https://www.google.com/search?q=buenos+aires%2C+argentina&rlz=1C1ALOY_esAR1012AR1012&sxsrf=ALiCzsaP5r2q3DiN4pGDxSFQ7dXPpPeFjQ%3A1659040094076&ei=XvHiYoyiBLyj1sQPoZymyAw&ved=0ahUKEwiMyeb7tZz5AhW8kZUCHSGOCckQ4dUDCA4&uact=5&oq=buenos+aires%2C+argentina&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEMsBMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhUILhDHARDRAxDUAhDIAxCwAxBDGAI6EgguEMcBENEDEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOg4ILhCxAxCDARDHARCvAToHCC4Q1AIQQzoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6BAgAEEM6CgguELEDENQCEEM6CwguEIAEEMcBEK8BOgUILhCABDoGCAAQHhAWSgQIQRgASgQIRhgBUNQUWIQ9YN0_aANwAXgAgAF4iAGeCZIBBDEwLjOYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz"
-                target="_blank"><img class="icon_footer mx-1" src="https://drive.google.com/uc?export=download&id=1_KJ7XPFSf1nOCAwwdTFWd7YGIbqHbp0u" alt="icono de ubicacion">Buenos
-                Aires, Argentina.</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/explore/tags/customkeyboard/?hl=es" target="_blank"><img
-                  class="icon_footer mx-1" src="https://drive.google.com/uc?export=download&id=1mPxIyn84D-WVybGfDQvLR1kzZRjSUqbz" alt="icono instagram">#Customkeyboard</a>
-            </li>
-            <li><img class="icon_footer mx-1" src="https://drive.google.com/uc?export=download&id=1-EojkjA1FQ9Qn32xj7NTmkCqoTSosqIH" alt="icono de creadord de la pagina"><span>
-                Owner:Federico Gorosito</span></li>
-          </ul>
+    <footer>
+      <div class="container-fluid text-center">
+        <div class="row p-4 bg-dark">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-light div_footer"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://www.google.com/search?q=buenos+aires%2C+argentina&rlz=1C1ALOY_esAR1012AR1012&sxsrf=ALiCzsaP5r2q3DiN4pGDxSFQ7dXPpPeFjQ%3A1659040094076&ei=XvHiYoyiBLyj1sQPoZymyAw&ved=0ahUKEwiMyeb7tZz5AhW8kZUCHSGOCckQ4dUDCA4&uact=5&oq=buenos+aires%2C+argentina&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEMsBMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhUILhDHARDRAxDUAhDIAxCwAxBDGAI6EgguEMcBENEDEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOg4ILhCxAxCDARDHARCvAToHCC4Q1AIQQzoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6BAgAEEM6CgguELEDENQCEEM6CwguEIAEEMcBEK8BOgUILhCABDoGCAAQHhAWSgQIQRgASgQIRhgBUNQUWIQ9YN0_aANwAXgAgAF4iAGeCZIBBDEwLjOYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz"
+                  target="_blank"
+                  ><img
+                    class="icon_footer mx-1"
+                    src="https://drive.google.com/uc?export=download&id=1_KJ7XPFSf1nOCAwwdTFWd7YGIbqHbp0u"
+                    alt="icono de ubicacion"
+                  />Buenos Aires, Argentina.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/explore/tags/customkeyboard/?hl=es"
+                  target="_blank"
+                  ><img
+                    class="icon_footer mx-1"
+                    src="https://drive.google.com/uc?export=download&id=1mPxIyn84D-WVybGfDQvLR1kzZRjSUqbz"
+                    alt="icono instagram"
+                  />#Customkeyboard</a
+                >
+              </li>
+              <li>
+                <img
+                  class="icon_footer mx-1"
+                  src="https://drive.google.com/uc?export=download&id=1-EojkjA1FQ9Qn32xj7NTmkCqoTSosqIH"
+                  alt="icono de creadord de la pagina"
+                /><span> Owner:Federico Gorosito</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
